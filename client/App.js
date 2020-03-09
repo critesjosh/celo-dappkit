@@ -25,14 +25,13 @@ export default class App extends React.Component {
     cUSDBalance: 'Not logged in',
     helloWorldContract: {},
     contractName: 'Press "READ()" to update',
-    textInput: 'placeholder contract name'
+    textInput: ''
   }
 
   componentDidMount = async () => {
     const networkId = await web3.eth.net.getId();
     const deployedNetwork = HelloWorldContract.networks[networkId];
 
-    console.log(deployedNetwork)
     const instance = new web3.eth.Contract(
       HelloWorldContract.abi,
       deployedNetwork && deployedNetwork.address,
@@ -95,7 +94,7 @@ export default class App extends React.Component {
     const tx = dappkitResponse.rawTxs[0];
     let result = await toTxResult(kit.web3.eth.sendSignedTransaction(tx)).waitReceipt()
 
-    console.log(result)  
+    console.log(`Hello World contract update transcation receipt: ${result}`)  
   }
 
   onChangeText = async (text) => {
@@ -120,7 +119,7 @@ export default class App extends React.Component {
               value={this.state.textInput}
             />
         </View>
-        <Button style={styles.button} title="update()" 
+        <Button style={{padding: 30}} title="update()" 
           onPress={()=> this.write()} />
           <Text>My Account Address: {this.state.address}</Text>
           <Text>Phone number: {this.state.phoneNumber}</Text>
@@ -137,5 +136,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#35d07f',
     alignItems: 'center',
     justifyContent: 'center',
+    marginVertical: 8,
   },
 });
