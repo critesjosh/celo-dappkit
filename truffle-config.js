@@ -8,7 +8,7 @@ const getAccount = require('./utils/getAccount').getAccount
 
 async function awaitWrapper(){
     let account = await getAccount()
-    console.log(account.address)
+    console.log(`Account address: ${account.address}`)
     kit.addAccount(account.privateKey)
 }
 
