@@ -12,6 +12,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/white-wallet-rings.png",
+    "scheme": "celodappkit",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
