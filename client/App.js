@@ -24,7 +24,7 @@ export default class App extends React.Component {
     phoneNumber: 'Not logged in',
     cUSDBalance: 'Not logged in',
     helloWorldContract: {},
-    contractName: 'Press "READ()" to update',
+    contractName: '',
     textInput: ''
   }
 
@@ -94,7 +94,7 @@ export default class App extends React.Component {
     const tx = dappkitResponse.rawTxs[0];
     let result = await toTxResult(kit.web3.eth.sendSignedTransaction(tx)).waitReceipt()
 
-    console.log(`Hello World contract update transcation receipt: ${result}`)  
+    console.log(`Hello World contract update transcation receipt: `, result)  
   }
 
   onChangeText = async (text) => {
@@ -104,27 +104,32 @@ export default class App extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text>Open up App.tsx to start working on your app!</Text>
+        <Text>Open up App.js to start working on your app!</Text>
+        
+        <Text style={styles.title}>Login first</Text>
         <Button title="login()" 
           onPress={()=> this.login()} />
-        <Button title="read()" 
+                <Text style={styles.title}>Account Info:</Text>
+        <Text>Current Account Address:</Text>
+        <Text>{this.state.address}</Text>
+        <Text>Phone number: {this.state.phoneNumber}</Text>
+        <Text>cUSD Balance: {this.state.cUSDBalance}</Text>
+
+        <Text style={styles.title}>Read HelloWorld</Text>
+        <Button title="Read Contract Name" 
           onPress={()=> this.read()} />
-        <View>
-          <Text>
-            New contract name:
-          </Text>
-          <TextInput
-              style={{  borderColor: 'black', borderWidth: 1, backgroundColor: 'white' }}
-              onChangeText={text => this.onChangeText(text)}
-              value={this.state.textInput}
-            />
-        </View>
-        <Button style={{padding: 30}} title="update()" 
+        <Text>Contract Name: {this.state.contractName}</Text>
+        
+        <Text style={styles.title}>Write to HelloWorld</Text>
+        <Text>New contract name:</Text>
+        <TextInput
+          style={{  borderColor: 'black', borderWidth: 1, backgroundColor: 'white' }}
+          placeholder="input new name here"
+          onChangeText={text => this.onChangeText(text)}
+          value={this.state.textInput}
+          />
+        <Button style={{padding: 30}} title="update contract name" 
           onPress={()=> this.write()} />
-          <Text>My Account Address: {this.state.address}</Text>
-          <Text>Phone number: {this.state.phoneNumber}</Text>
-          <Text>cUSD Balance: {this.state.cUSDBalance}</Text>
-          <Text>Hello World Contract Name: {this.state.contractName}</Text>
       </View>
     );
   }
@@ -136,6 +141,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#35d07f',
     alignItems: 'center',
     justifyContent: 'center',
-    marginVertical: 8,
   },
+  title: {
+    marginVertical: 8, 
+    fontSize: 20, 
+    fontWeight: 'bold'
+  }
 });
