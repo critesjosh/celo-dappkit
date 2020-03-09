@@ -4,6 +4,8 @@
 
 Use this Truffle Box to get started building a mobile dapp using Celo and React Native in Typescript. We will build a simple React Native application that we can use to read and update a contract on the Alfajores test network.
 
+Once the box is downloaded run `$ yarn` to install the necessary smart contract development dependencies. Navigate to the client directory and run `$ yarn` again to install the client application dependencies.
+
 This Truffle box uses React Native and Expo for developing a mobile first Celo blockchain experience. You will also need Expo installed globally on your machine. Install it with:
 
 ```
