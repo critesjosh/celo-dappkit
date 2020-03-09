@@ -1,0 +1,9 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {},
+  "dependencies": {
+    "@celo/contractkit": "0.2.14"
+  },
+  "devDependencies": {},
+  "private": true
+}

@@ -1,0 +1,13 @@
+{
+    "ignore": [
+        ".gitignore"
+      ],
+      "commands": {
+        "Compile": "truffle compile",
+        "Migrate": "truffle migrate",
+        "Test contracts": "truffle test"
+      },
+      "hooks": {
+        "post-unpack": "yarn"
+      }
+}

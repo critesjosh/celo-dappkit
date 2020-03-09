@@ -1,0 +1,18 @@
+node_modules/**/*
+node_modules/
+client/node_modules/
+client/.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/
+build/
+.secret
+
+# macOS
+.DS_Store
