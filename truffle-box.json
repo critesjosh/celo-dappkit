@@ -8,6 +8,6 @@
         "Test contracts": "truffle test"
       },
       "hooks": {
-        "post-unpack": "yarn"
+
       }
 }

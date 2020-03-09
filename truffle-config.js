@@ -17,6 +17,8 @@ awaitWrapper()
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // to customize your Truffle configuration!
+
+  // The following line will put the compiled contracts and associated info at ./client/contracts
   contracts_build_directory: path.join(__dirname, "client/contracts"),
 
   networks: {

@@ -135,3 +135,15 @@ You can use your physical mobile device or an emulator to develop apps with Expo
 ### Using an emulator
 
 You can find more information about running and Android emulator [here.](https://developer.android.com/studio/run/emulator-commandline)
+
+## Celo Dapp Examples
+
+[Celo Savings Circle](https://github.com/celo-org/savings-circle-demo)
+
+## Wrapping up
+
+You should now have the necessary skills to get started with developing mobile applications on Celo.
+
+This is not a comprehensive tutorial for Celo's features and capabilities. 
+
+Please [see our documentation](https://docs.celo.org/) for more info and feel free to [connect with us on Discord](https://discord.gg/745Qntv) if you need any help!

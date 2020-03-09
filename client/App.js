@@ -1,7 +1,7 @@
 import React from 'react';
 import './global';
 import { web3, kit } from './root'
-import { StyleSheet, Text, TextInput, Button, View, YellowBox } from 'react-native';
+import { Image, StyleSheet, Text, TextInput, Button, View, YellowBox } from 'react-native';
 import {   
   requestTxSig,
   waitForSignedTxs,
@@ -104,6 +104,7 @@ export default class App extends React.Component {
   render(){
     return (
       <View style={styles.container}>
+        <Image resizeMode='contain' source={require("./assets/white-wallet-rings.png")}></Image>
         <Text>Open up App.js to start working on your app!</Text>
         
         <Text style={styles.title}>Login first</Text>
