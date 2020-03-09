@@ -1,6 +1,8 @@
 {
   "main": "node_modules/expo/AppEntry.js",
-  "scripts": {},
+  "scripts": {
+    "account": "node utils/createAccount.js"
+  },
   "dependencies": {
     "@celo/contractkit": "0.2.14"
   },
