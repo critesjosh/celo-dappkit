@@ -4,7 +4,7 @@
 
 Use this Truffle Box to get started building a mobile dapp using Celo and React Native in Typescript. We will build a simple React Native application that we can use to read and update a contract on the Alfajores test network.
 
-Once the box is downloaded run `$ yarn` to install the necessary smart contract development dependencies. Navigate to the client directory and run `$ yarn` again to install the client application dependencies.
+Once you download the box, run `$ yarn` to install the necessary smart contract development dependencies. Navigate to the client directory and run `$ yarn` again to install the client application dependencies.
 
 This Truffle box uses React Native and Expo for developing a mobile first Celo blockchain experience. You will also need Expo installed globally on your machine. Install it with:
 
@@ -20,7 +20,7 @@ Run
 ```
 $ npm run account
 ```
-to create a new account for development. The new account address will be printed in the console. This script will generate a private key for you and store it in `/.secret`. If you need to print the account info again, just run `$ npm run account` again, it will not create a new account, it will read the saved private key and print the corresponding account address. 
+to create a new account for development. The new account address will be printed in the console. This script will generate a private key for you and store it in `/.secret`. If you need to print the account info again, run `$ npm run account` again, it will not create a new account, it will read the saved private key and print the corresponding account address. 
 
 Truffle will read this private key for contract deployments. 
 
@@ -110,7 +110,7 @@ Truffle will save the deployment information to the Truffle artifact located at 
 
 ## Developing the mobile application
 
-Keep in mind that you will need a version of the Celo Wallet installed on the mobile device with which you are developing the application. The Celo Wallet is the private key management software used to sign transations for the user. 
+Keep in mind that you will need a version of the Celo Wallet installed on the mobile device with which you are developing the application. The Celo Wallet is the private key management software used to sign transactions for the user. 
 
 You can build a the latest version of the Celo Wallet and find instructions on running a development build [here.](https://github.com/celo-org/celo-monorepo/tree/master/packages/mobile) Once you have a device with the Celo wallet installed, you can start working on your application. 
 
