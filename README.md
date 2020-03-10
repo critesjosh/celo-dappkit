@@ -14,7 +14,7 @@ $ npm install expo-cli --global
 
 ## Smart contract development
 
-The project comes with a Hello World example contract in the root contracts directory. The box is also configured to automatically deploy Solidity smart contracts to the Alfajores test network, but you will need test network funds to pay for the deployment costs. 
+The project comes with a Hello World example contract in the root contracts directory. The box is also configured to deploy Solidity smart contracts to the Alfajores test network, but you will need test network funds to pay for the deployment costs. 
 
 Run
 ```
@@ -32,7 +32,7 @@ $ truffle migrate --network alfajores
 ```
 To run a local development Celo blockchain, use the Celo fork of `ganache-cli`. You can find the package details and install instructions [here.](https://www.npmjs.com/package/@celo/ganache-cli)
 
-You should deploy the `HelloWorld.sol` contract to work through the exercise. You can deploy it using the remote node specified in `truffle-config.js`. You may get an error about connecting to a running RPC client. If you run into the error, trying running `truffle migrate --network alfajores` again. A successful deployment should print something similar to the following:
+You should deploy the `HelloWorld.sol` contract to work through the exercise. You can deploy it using the remote node specified in `truffle-config.js`. You may get an error about connecting to a running RPC client. If you run into the error, trying running `truffle migrate --network alfajores` again. A successful deployment should print something like the following:
 
 ```
 Joshs-MacBook-Pro-2:untitled folder joshcrites$ truffle migrate --network alfajores
@@ -102,7 +102,7 @@ Summary
 > Total deployments:   2
 > Final cost:          0.0093263 ETH
 ```
-Since we are developing this on the public Alfajores test network, we can view all of the accounts, contracts and transactions on the [public block explorer](https://alfajores-blockscout.celo-testnet.org/).
+Since we are developing this on the public Alfajores test network, we can view all the accounts, contracts and transactions on the [public block explorer](https://alfajores-blockscout.celo-testnet.org/).
 
 You can look up the contract deployment transaction on the Alfajores block explorer via the transaction hash, [https://alfajores-blockscout.celo-testnet.org/tx/0xb48d8f2da01f49b6ebe3dd2391b289c735afd2ec1b57902a5bd3958c4b5773b3](https://alfajores-blockscout.celo-testnet.org/tx/0xb48d8f2da01f49b6ebe3dd2391b289c735afd2ec1b57902a5bd3958c4b5773b3) in this case.
 
