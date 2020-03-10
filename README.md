@@ -2,7 +2,7 @@
 
 **Mandatory:** Make sure that you have the [Yarn package manager](https://yarnpkg.com/) installed.
 
-Use this [Truffle Box](https://www.trufflesuite.com/boxes) to get started building a mobile dapp using Celo and React Native in Typescript. We will build a simple React Native application that we can use to read and update a contract on the Alfajores test network.
+Use this [Truffle Box](https://www.trufflesuite.com/boxes) to get started building a mobile dapp using Celo and React Native in Javascript. We will build a simple React Native application that we can use to read and update a contract on the Alfajores test network.
 
 Once you download the box, run `$ yarn` to install the necessary smart contract development dependencies. Navigate to the client directory and run `$ yarn` again to install the client application dependencies.
 
