@@ -1,6 +1,6 @@
 # Hello Celo Truffle Box
 
-**Mandatory:** Make sure that you have the [Yarn package manager](https://yarnpkg.com/) and [Truffle](https://www.trufflesuite.com/truffle) installed, then `$ truffle unbox critesjosh/celo-dappkit` in your new project directory.
+**Mandatory:** Make sure that you have the [Yarn package manager](https://yarnpkg.com/) and [Truffle](https://www.trufflesuite.com/truffle) installed, then `$ truffle unbox critesjosh/celo-dappkit` in your new project directory. **Also, be sure to use Node.js version 10.x.**
 
 Use this [Truffle Box](https://www.trufflesuite.com/boxes) to get started building a mobile dapp using Celo and React Native in Javascript. We will build a simple React Native application that we can use to read and update a contract on the Alfajores test network.
 
