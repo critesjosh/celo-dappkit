@@ -1,7 +1,5 @@
 # Celo Truffle Box
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/critesjosh/celo-dappkit) 
-
 **Mandatory:** Make sure that you have the [Yarn package manager](https://yarnpkg.com/) and [Truffle](https://www.trufflesuite.com/truffle) installed, then `$ truffle unbox critesjosh/celo-dappkit` in your new project directory. **Also, be sure to use Node.js version 10.x.**
 
 Use this [Truffle Box](https://www.trufflesuite.com/boxes) to get started building a mobile dapp using Celo and React Native in Javascript. We will build a simple React Native application that we can use to read and update a contract on the Alfajores test network.
@@ -13,6 +11,12 @@ This Truffle box uses React Native and Expo for developing a mobile first Celo b
 ```
 $ npm install expo-cli --global
 ```
+
+## Running on Gitpod
+
+You can get started quickly without installing anything on your computer by opening this project on Gitpod. When you open the project you will have to wait several minutes for the packages to install. This is just for demonstration purposes--development on Gitpod is too slow to be practical. You will need the Expo app installed on your mobile device ([iOS](https://apps.apple.com/app/apple-store/id982107779) or [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www)). You will also need the [Celo Wallet](https://celo.org/developers/wallet) on your mobile device to sign transactions. The app may connect to a HelloWorld contract that has already been deployed to the testnet, or you may have to deploy your own (details below).
+
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/critesjosh/celo-dappkit) 
 
 ## Smart contract development
 
