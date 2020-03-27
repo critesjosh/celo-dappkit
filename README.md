@@ -1,4 +1,4 @@
-# Hello Celo Truffle Box
+# Celo Truffle Box
 
 **Mandatory:** Make sure that you have the [Yarn package manager](https://yarnpkg.com/) and [Truffle](https://www.trufflesuite.com/truffle) installed, then `$ truffle unbox critesjosh/celo-dappkit` in your new project directory. **Also, be sure to use Node.js version 10.x.**
 
