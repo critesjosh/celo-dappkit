@@ -1,2 +1,4 @@
 tasks:
-  - init: npm i -g truffle expo && yarn install && cd client && yarn install
+  - init: yarn install 
+    command: npm i -g truffle expo-cli
+    command: cd client && yarn install && expo start
