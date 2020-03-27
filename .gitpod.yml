@@ -4,5 +4,4 @@
 tasks:
   - before: npm i -g truffle expo-cli
     init: yarn install && cd client && yarn install
-  - command: expo start --tunnel
-  - command: cd /workspace/celo-dappkit && npm run account
+    command: cd /workspace/celo-dappkit && npm run account && cd client && expo start --tunnel 
