@@ -3,5 +3,5 @@
 
 tasks:
   - before: npm i -g truffle expo-cli
-    init: yarn install && cd client && yarn install && npm run account
+    init: yarn install && npm run account && cd client && yarn install
     command: expo start --tunnel
