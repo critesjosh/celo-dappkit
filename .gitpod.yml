@@ -1,0 +1,7 @@
+# try this on Gitpod without installing any code locally 
+# https://gitpod.io#https://github.com/critesjosh/celo-dappkit/tree/critesjosh/gitpod-setup
+
+tasks:
+  - before: npm i -g truffle expo-cli
+    init: yarn install && cd client && yarn install
+    command: cd /workspace/celo-dappkit && npm run account && cd client && expo start --tunnel 
