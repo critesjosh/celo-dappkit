@@ -140,6 +140,8 @@ $ expo start
 
 You can use your physical mobile device or an emulator to develop apps with Expo. If you want to use your physical device, you will have to [install the Expo app on your device.](https://expo.io/learn)
 
+Make sure the Celo Wallet app is open on your device when you are using your dapp. Your dapp will be requesting information from the Celo Wallet.
+
 ### Using an emulator
 
 You can find more information about running and Android emulator [here.](https://developer.android.com/studio/run/emulator-commandline)
