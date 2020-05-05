@@ -146,6 +146,8 @@ In this project, the React Native application lives in the `client` directory. `
 Install it with:
 ```
 $ yarn global add expo-cli
+# or
+$ npm install --global expo-cli
 ```
 
 You can start the application from the client directory with
