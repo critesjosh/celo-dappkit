@@ -16,11 +16,7 @@ $ cd client  # move into the client directory
 $ yarn       # install front end dependencies
 ```
 
-This Truffle box uses React Native and [Expo](https://expo.io/) for developing a mobile first Celo blockchain experience. You will also need Expo installed globally on your machine. Install it with:
-
-```bash
-$ yarn global add expo-cli
-```
+This Truffle box uses React Native and [Expo](https://expo.io/) for developing a mobile first Celo blockchain experience. 
 
 ## Mobile Dependencies
 
@@ -149,10 +145,10 @@ In this project, the React Native application lives in the `client` directory. `
 
 Install it with:
 ```
-$ npm install expo-cli --global
+$ yarn global add expo-cli
 ```
 
-You can start the application with
+You can start the application from the client directory with
 ```
 $ expo start
 ```
