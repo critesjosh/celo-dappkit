@@ -26,7 +26,7 @@ You will also need the [Celo Wallet](https://celo.org/developers/wallet) on your
 
 ## Smart contract development
 
-The project comes with a Hello World example contract in the root contracts directory. 
+The project comes with a [Hello World example contract](https://github.com/critesjosh/celo-dappkit/blob/master/contracts/HelloWorld.sol) in the root contracts directory. 
 
 The box is also configured to deploy Solidity smart contracts to the Alfajores test network. You will need test network funds to deploy your own contract. 
 
