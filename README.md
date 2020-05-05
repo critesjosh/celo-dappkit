@@ -1,42 +1,56 @@
 # Celo Truffle Box
 
-**Mandatory:** Make sure that you have the [Yarn package manager](https://yarnpkg.com/) and [Truffle](https://www.trufflesuite.com/truffle) installed, then `$ truffle unbox critesjosh/celo-dappkit` in your new project directory. **Also, be sure to use Node.js version 10.x.**
+**Mandatory:** Make sure that you have the [Yarn package manager](https://yarnpkg.com/) and [Truffle](https://www.trufflesuite.com/truffle) installed, then in a new project directory run
 
-Use this [Truffle Box](https://www.trufflesuite.com/boxes) to get started building a mobile dapp using Celo and React Native in Javascript. We will build a simple React Native application that we can use to read and update a contract on the Alfajores test network.
+```bash
+$ truffle unbox critesjosh/celo-dappkit
+``` 
 
-Once you download the box, run `$ yarn` to install the necessary smart contract development dependencies. Navigate to the client directory and run `$ yarn` again to install the client application dependencies.
+This [Truffle Box](https://www.trufflesuite.com/boxes) will help you get started building a mobile dapp using Celo and React Native in Javascript. We will build a simple React Native application that we can use to read and update a contract on the Alfajores test network.
 
-This Truffle box uses React Native and Expo for developing a mobile first Celo blockchain experience. You will also need Expo installed globally on your machine. Install it with:
+The project smart contracts and configuration are in the root directory. The React Native front end is in the `/client` directory. Once you download the box, run 
 
+```bash
+$ yarn       # install depenedncies
+$ cd client  # move into the client directory
+$ yarn       # install front end dependencies
 ```
-$ npm install expo-cli --global
+
+This Truffle box uses React Native and [Expo](https://expo.io/) for developing a mobile first Celo blockchain experience. You will also need Expo installed globally on your machine. Install it with:
+
+```bash
+$ yarn global add expo-cli
 ```
 
-## Running on Gitpod
+## Mobile Dependencies
 
-You can get started quickly without installing anything on your computer by opening this project on [Gitpod](https://gitpod.io/). When you open the project you will have to wait several minutes for the packages to install. This is just for demonstration purposes--development on Gitpod is too slow to be practical. You will need the Expo app installed on your mobile device ([iOS](https://apps.apple.com/app/apple-store/id982107779) or [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www)). You will also need the [Celo Wallet](https://celo.org/developers/wallet) on your mobile device to sign transactions. The app may automatically connect to a HelloWorld contract that has already been deployed to the testnet, or you may have to deploy your own (details below).
+You will need the Expo app installed on your mobile device ([iOS](https://apps.apple.com/app/apple-store/id982107779) or [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www)). 
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/critesjosh/celo-dappkit) <== click me!
+You will also need the [Celo Wallet](https://celo.org/developers/wallet) on your mobile device to sign transactions. The app may automatically connect to a HelloWorld contract that has already been deployed to the testnet, or you may have to deploy your own (details below).
 
 ## Smart contract development
 
-The project comes with a Hello World example contract in the root contracts directory. The box is also configured to deploy Solidity smart contracts to the Alfajores test network, but you will need test network funds to pay for the deployment costs. 
+The project comes with a Hello World example contract in the root contracts directory. 
+
+The box is also configured to deploy Solidity smart contracts to the Alfajores test network. You will need test network funds to deploy your own contract. 
 
 Run
+
+```bash
+$ yarn account
 ```
-$ npm run account
-```
-to create a new account for development. The new account address will be printed in the console. This script will generate a private key for you and store it in `/.secret`. If you need to print the account info again, run `$ npm run account` again, it will not create a new account, it will read the saved private key and print the corresponding account address. 
+
+to create a new account for development. The new account address will be printed in the console. This script will generate a private key for you and store it in `/.secret`. If you need to print the account info again, run `$ yarn account` again. It will not create a new account, it will read the saved private key and print the corresponding account address. 
 
 Truffle will read this private key for contract deployments. 
 
 Copy your account address and paste it in to the [Alfajores faucet](https://celo.org/developers/faucet) to fund your account.
 
 You can migrate the `HelloWorld.sol` contract to the alfajores test network with
+
 ```bash
 $ truffle migrate --network alfajores
 ```
-To run a local development Celo blockchain, use the Celo fork of `ganache-cli`. You can find the package details and install instructions [here.](https://www.npmjs.com/package/@celo/ganache-cli)
 
 You should deploy the `HelloWorld.sol` contract to work through the exercise. You can deploy it using the remote node specified in `truffle-config.js`. You may get an error about connecting to a running RPC client. If you run into the error, trying running `truffle migrate --network alfajores` again. A successful deployment should print something like the following:
 
@@ -108,6 +122,7 @@ Summary
 > Total deployments:   2
 > Final cost:          0.0093263 ETH
 ```
+
 Since we are developing this on the public Alfajores test network, we can view all the accounts, contracts and transactions on the [public block explorer](https://alfajores-blockscout.celo-testnet.org/).
 
 You can look up the contract deployment transaction on the Alfajores block explorer via the transaction hash, [https://alfajores-blockscout.celo-testnet.org/tx/0xb48d8f2da01f49b6ebe3dd2391b289c735afd2ec1b57902a5bd3958c4b5773b3](https://alfajores-blockscout.celo-testnet.org/tx/0xb48d8f2da01f49b6ebe3dd2391b289c735afd2ec1b57902a5bd3958c4b5773b3) in this case.
@@ -116,9 +131,13 @@ Truffle will save the deployment information to the Truffle artifact located at 
 
 ## Developing the mobile application
 
-Keep in mind that you will need a version of the Celo Wallet installed on the mobile device with which you are developing the application. The Celo Wallet is the private key management software used to sign transactions for the user. 
+Keep in mind that you will need a version of the Celo Wallet installed on the mobile device with which you are developing the application. The Celo Wallet is the private key management software that the user will sign transactions with. 
 
-You can build a the latest version of the Celo Wallet and find instructions on running a development build [here.](https://github.com/celo-org/celo-monorepo/tree/master/packages/mobile) Once you have a device with the Celo wallet installed, you can start working on your application. 
+You can install the Celo wallet on your physical device with an invite code [here.](https://celo.org/developers/wallet) 
+
+You can build a the latest version of the Celo Wallet and find instructions on running a development build [here.](https://github.com/celo-org/celo-monorepo/tree/master/packages/mobile) 
+
+Once you have a device with the Celo wallet installed, you can start working on your application. 
 
 For the purposes of introduction, we have added some code to you get you started located in App.js in the `client` directory.
 
