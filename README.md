@@ -96,16 +96,16 @@ Starting migrations...
 2_deploy_contracts.js
 =====================
 
-   Deploying 'HelloWorld'
+   Replacing 'HelloWorld'
    ----------------------
-   > transaction hash:    0xb48d8f2da01f49b6ebe3dd2391b289c735afd2ec1b57902a5bd3958c4b5773b3
+   > transaction hash:    0x2c668a91c268d0e553ec783ea2d6ae0dc63f9c00470c8de596a1b2c1a1d4563c
    > Blocks: 1            Seconds: 4
-   > contract address:    0xD9BBC1c3C76bd285C33de5Df4b987369EC66DC56
-   > block number:        587190
-   > block timestamp:     1583779428
-   > account:             0x0ac6eDb733EAB57f8fa6c0F8678de0b9ef950bc6
-   > balance:             4.979126059999999888
-   > gas used:            277896
+   > contract address:    0xa0Bfb781CE0FdB77e58FA6Dd94bA71b0eabbf9D3
+   > block number:        439845
+   > block timestamp:     1588698470
+   > account:             0x919a4290aB4EcA0229D42C263505d656f0e94563
+   > balance:             4.9898324
+   > gas used:            277896 (0x43d88)
    > gas price:           20 gwei
    > value sent:          0 ETH
    > total cost:          0.00555792 ETH
@@ -125,7 +125,7 @@ Summary
 
 Since we are developing this on the public Alfajores test network, we can view all the accounts, contracts and transactions on the [public block explorer](https://alfajores-blockscout.celo-testnet.org/).
 
-You can look up the contract deployment transaction on the Alfajores block explorer via the transaction hash, [https://alfajores-blockscout.celo-testnet.org/tx/0xb48d8f2da01f49b6ebe3dd2391b289c735afd2ec1b57902a5bd3958c4b5773b3](https://alfajores-blockscout.celo-testnet.org/tx/0xb48d8f2da01f49b6ebe3dd2391b289c735afd2ec1b57902a5bd3958c4b5773b3) in this case.
+You can look up the contract deployment transaction on the Alfajores block explorer via the transaction hash, [https://alfajores-blockscout.celo-testnet.org/tx/0x2c668a91c268d0e553ec783ea2d6ae0dc63f9c00470c8de596a1b2c1a1d4563c](https://alfajores-blockscout.celo-testnet.org/tx/0x2c668a91c268d0e553ec783ea2d6ae0dc63f9c00470c8de596a1b2c1a1d4563c) in this case.
 
 Truffle will save the deployment information to the Truffle artifact located at `client/contracts/HelloWorld.json`. You will use this deployment information to connect your React Native application to the correct contract.
 
