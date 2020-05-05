@@ -34,7 +34,7 @@ The project comes with a Hello World example contract in the root contracts dire
 
 The box is also configured to deploy Solidity smart contracts to the Alfajores test network. You will need test network funds to deploy your own contract. 
 
-Run
+In the project root run
 
 ```bash
 $ yarn account
