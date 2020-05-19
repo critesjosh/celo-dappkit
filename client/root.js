@@ -1,3 +1,5 @@
+// Initialize an instance of ContractKit connected to the Alfajores testnet (read-only)
+
 import Web3 from 'web3'
 import { newKitFromWeb3 } from "@celo/contractkit";
 
