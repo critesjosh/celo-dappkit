@@ -34,8 +34,7 @@ export default class App extends React.Component {
 
     const instance = new web3.eth.Contract(
       HelloWorldContract.abi,
-      deployedNetwork && deployedNetwork.address,
-      { from: this.state.account }
+      deployedNetwork && deployedNetwork.address
     );
 
     this.setState({ helloWorldContract: instance })
