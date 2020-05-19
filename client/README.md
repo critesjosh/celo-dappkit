@@ -1,4 +1,4 @@
-# A simple React Native app w/ Expo
+# A simple Celo React Native app w/ Expo
 
 This directory contains a simple [React Native](https://reactnative.dev/) app with the [Expo](https://expo.io/) development framework. 
 
