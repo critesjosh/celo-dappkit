@@ -1,3 +1,9 @@
+/*
+    This script looks for a .secret file in the project root. 
+    If none is found, it creates an account private key and saves the key in a new .secret file. 
+    If a .secret file is found, it returns an account object corresponding to the stored private key.
+*/
+
 const Web3 = require('web3')
 const fs = require('fs')
 const path = require('path')
