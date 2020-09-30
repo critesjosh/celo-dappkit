@@ -3,6 +3,7 @@ const path = require('path')
 
 // Connect to the desired network
 const kit = Kit.newKit('https://alfajores-forno.celo-testnet.org')
+// const kit = Kit.newKit('https://forno.celo.org') // mainnet endpoint
 
 const getAccount = require('./utils/getAccount').getAccount
 
@@ -32,6 +33,10 @@ module.exports = {
     alfajores: {
       provider: kit.web3.currentProvider,
       network_id: 44786
+    },
+    mainnet: {
+      provider: kit.web3.currentProvider,
+      network_id: 42220
     }
   }
 };
