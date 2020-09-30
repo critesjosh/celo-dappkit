@@ -119,9 +119,9 @@ Summary
 > Final cost:          0.0093263 ETH
 ```
 
-Since we are developing this on the public Alfajores test network, we can view all the accounts, contracts and transactions on the [public block explorer](https://alfajores-blockscout.celo-testnet.org/).
+Since we are developing this on the public Alfajores test network, we can view all the accounts, contracts and transactions on the [public Alfajores block explorer](https://alfajores-blockscout.celo-testnet.org/).
 
-You can look up the contract deployment transaction on the Alfajores block explorer via the transaction hash, [https://alfajores-blockscout.celo-testnet.org/tx/0x2c668a91c268d0e553ec783ea2d6ae0dc63f9c00470c8de596a1b2c1a1d4563c](https://alfajores-blockscout.celo-testnet.org/tx/0x2c668a91c268d0e553ec783ea2d6ae0dc63f9c00470c8de596a1b2c1a1d4563c) in this case.
+You can look up the contract deployment transaction on the Alfajores block explorer via the transaction hash.
 
 Truffle will save the deployment information to the Truffle artifact located at `client/contracts/HelloWorld.json`. You will use this deployment information to connect your React Native application to the correct contract.
 
