@@ -8,8 +8,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@celo/contractkit": "0.2.14",
-    "@celo/dappkit": "0.0.9",
+    "@celo/contractkit": "^0.2.14",
+    "@celo/dappkit": "^0.0.9",
     "@expo/samples": "~3.0.3",
     "@expo/vector-icons": "^10.0.6",
     "@react-native-community/masked-view": "0.1.5",
