@@ -125,7 +125,7 @@ export default class App extends React.Component {
     // Get the transaction result, once it has been included in the Celo blockchain
     let result = await toTxResult(kit.web3.eth.sendSignedTransaction(tx)).waitReceipt()
 
-    console.log(`Hello World contract update transcation receipt: `, result)  
+    console.log(`Hello World contract update transaction receipt: `, result)  
   }
 
   onChangeText = async (text) => {
