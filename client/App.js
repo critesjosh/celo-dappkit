@@ -1,7 +1,7 @@
-import React from 'react';
-import './global';
+import React from 'react'
+import './global'
 import { web3, kit } from './root'
-import { Image, StyleSheet, Text, TextInput, Button, View, YellowBox } from 'react-native';
+import { Image, StyleSheet, Text, TextInput, Button, View, YellowBox } from 'react-native'
 import {   
   requestTxSig,
   waitForSignedTxs,
@@ -9,12 +9,12 @@ import {
   waitForAccountAuth,
   FeeCurrency
 } from '@celo/dappkit'
-import { toTxResult } from "@celo/contractkit/lib/utils/tx-result";
+import { toTxResult } from "@celo/connect"
 import { Linking } from 'expo'
 import HelloWorldContract from './contracts/HelloWorld.json'
 
 
-YellowBox.ignoreWarnings(['Warning: The provided value \'moz', 'Warning: The provided value \'ms-stream']);
+YellowBox.ignoreWarnings(['Warning: The provided value \'moz', 'Warning: The provided value \'ms-stream'])
 
 export default class App extends React.Component {
 
