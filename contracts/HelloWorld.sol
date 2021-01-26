@@ -1,7 +1,7 @@
 // Learn more about Solidity here: https://solidity.readthedocs.io
 
 // This statement specifies the compatible compiler versions
-pragma solidity >=0.5.0 <0.7.0;
+pragma solidity >=0.5.0;
 
 // Declare a contract called HelloWorld
 contract HelloWorld {
