@@ -4,7 +4,8 @@
     "account": "node utils/createAccount.js"
   },
   "dependencies": {
-    "@celo/contractkit": "^0.4.0"
+    "@celo/contractkit": "^1.0.0",
+    "web3": "^1.3.3"
   },
   "devDependencies": {},
   "private": true
