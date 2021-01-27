@@ -1,19 +1,26 @@
 # Celo Truffle Box
 
-**Mandatory:** Make sure that you have the [Yarn package manager](https://yarnpkg.com/) and [Truffle](https://www.trufflesuite.com/truffle) installed, then in a new project directory run
+This [Truffle Box](https://www.trufflesuite.com/boxes) will help you get started building a mobile dapp using Celo and React Native in Javascript. We will build a simple React Native application that we can use to read and update a contract on the [Alfajores test network](https://docs.celo.org/getting-started/alfajores-testnet).
+
+## Requirements
+
+- [Node.js](https://nodejs.org/en/)
+- [Yarn package manager](https://yarnpkg.com/)
+- [Truffle](https://www.trufflesuite.com/truffle)
+- [Expo](https://docs.expo.io/get-started/installation/)
+
+## Get the boilerplate
 
 ```bash
-$ truffle unbox critesjosh/celo-dappkit
+truffle unbox critesjosh/celo-dappkit
 ``` 
-
-This [Truffle Box](https://www.trufflesuite.com/boxes) will help you get started building a mobile dapp using Celo and React Native in Javascript. We will build a simple React Native application that we can use to read and update a contract on the Alfajores test network.
 
 The project smart contracts and configuration are in the root directory. The React Native front end is in the `/client` directory. Once you download the box, run 
 
 ```bash
-$ yarn       # install depenedncies
-$ cd client  # move into the client directory
-$ yarn       # install front end dependencies
+yarn       # install depenedncies
+cd client  # move into the client directory
+yarn       # install front end dependencies
 ```
 
 This Truffle box uses React Native and [Expo](https://expo.io/) for developing a mobile first Celo blockchain experience. 
@@ -30,13 +37,13 @@ The project comes with a [Hello World example contract](https://github.com/crite
 
 The box is also configured to deploy Solidity smart contracts to the Alfajores test network. You will need test network funds to deploy your own contract. 
 
-In the project root run
+To create a new account for development, in the project root run
 
 ```bash
-$ yarn account
+yarn account
 ```
 
-to create a new account for development. The new account address will be printed in the console. This script will generate a private key for you and store it in `/.secret`. If you need to print the account info again, run `$ yarn account` again. It will not create a new account, it will read the saved private key and print the corresponding account address. 
+The new account address will be printed in the console. This script will generate a private key for you and store it in `/.secret`. If you need to print the account info again, run `yarn account` again. It will not create a new account, it will read the saved private key and print the corresponding account address. 
 
 Truffle will read this private key for contract deployments. 
 
@@ -45,7 +52,7 @@ Copy your account address and paste it in to the [Alfajores faucet](https://celo
 You can migrate the `HelloWorld.sol` contract to the alfajores test network with
 
 ```bash
-$ truffle migrate --network alfajores
+truffle migrate --network alfajores
 ```
 
 You should deploy the `HelloWorld.sol` contract to work through the exercise. You can deploy it using the remote node specified in `truffle-config.js`. You may get an error about connecting to a running RPC client. If you run into the error, trying running `truffle migrate --network alfajores` again. A successful deployment should print something like the following:
@@ -145,9 +152,9 @@ In this project, the React Native application lives in the `client` directory. `
 
 Install it with:
 ```
-$ yarn global add expo-cli
+yarn global add expo-cli
 # or
-$ npm install --global expo-cli
+npm install --global expo-cli
 ```
 
 You can start the application from the client directory with
@@ -165,7 +172,7 @@ You can find more information about running and Android emulator [here.](https:/
 
 ## Celo Dapp Examples
 
-[Celo Savings Circle](https://github.com/celo-org/savings-circle-demo)
+Check out the [Celo DApp Gallery](https://docs.celo.org/developer-guide/celo-dapp-gallery) for more examples.
 
 ## Wrapping up
 
