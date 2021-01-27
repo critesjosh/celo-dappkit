@@ -159,7 +159,7 @@ npm install --global expo-cli
 
 You can start the application from the client directory with
 ```
-$ expo start
+expo start
 ```
 
 You can use your physical mobile device or an emulator to develop apps with Expo. If you want to use your physical device, you will have to [install the Expo app on your device.](https://expo.io/learn)
