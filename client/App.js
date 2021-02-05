@@ -10,7 +10,7 @@ import {
   FeeCurrency
 } from '@celo/dappkit'
 import { toTxResult } from "@celo/connect"
-import { Linking } from 'expo'
+import * as Linking from 'expo-linking'
 import HelloWorldContract from './contracts/HelloWorld.json'
 
 
