@@ -3,7 +3,6 @@
     "name": "Celo DappKit Truffle Box",
     "slug": "celo-dappkit",
     "privacy": "public",
-    "sdkVersion": "40.0.0",
     "platforms": [
       "ios",
       "android",
