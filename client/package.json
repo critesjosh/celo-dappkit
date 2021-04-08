@@ -8,9 +8,9 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@celo/connect": "^1.0.1",
-    "@celo/contractkit": "^1.0.0",
-    "@celo/dappkit": "^1.0.0",
+    "@celo/connect": "^1.1.0",
+    "@celo/contractkit": "^1.1.0",
+    "@celo/dappkit": "^1.1.0",
     "crypto-browserify": "^3.12.0",
     "expo": "^40.0.1",
     "expo-file-system": "^10.0.0",
