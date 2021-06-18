@@ -77,8 +77,10 @@ export default class App extends React.Component {
     // Get the user account balance (cUSD)
     const cUSDBalanceBig = await stableToken.balanceOf(kit.defaultAccount)
     
-    // Convert from a big number to a string
-    let cUSDBalance = cUSDBalanceBig.toString()
+    // Convert from a big number to a string by rounding it to the appropriate number of decimal places
+    const ERC20_DECIMALS = 18
+    let cUSDBalanceDec = cUSDBalanceBig.shiftedBy(-ERC20_DECIMALS).toFixed(2)
+    let cUSDBalance = cUSDBalanceDec.toString()
     
     // Update state
     this.setState({ cUSDBalance, 
